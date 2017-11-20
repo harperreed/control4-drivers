@@ -3,14 +3,17 @@ layout: post
 title:  "Realtime Event Webhook driver"
 ---
 
-- Download: [realtime-event-webhook.c4z](https://github.com/harperreed/control4-drivers/releases/download/realtime-event-webhooks-1/realtime-event-webhook.c4z)
-- Release notes: [Realtime Event Webhooks initial release](https://github.com/harperreed/control4-drivers/releases/tag/realtime-event-webhooks-1)
-
 This driver is a simple realtime event webhook driver. 
 
 It will register events for lighting, thermostat, motion, locks, and fans. When an event occurs, it will send an event notification via webhook with all of the relevant variables associated with that event and device.
 
 The best part is that it does it via internal events and doesn't require polling. This should be better for Control4 and be much more performant. It also allows the events to execute the exact moment that it happens in Control4. 
+
+## Download
+
+- Download: [realtime-event-webhook.c4z](https://github.com/harperreed/control4-drivers/releases/download/realtime-event-webhooks-1/realtime-event-webhook.c4z)
+- Release notes: [Realtime Event Webhooks initial release](https://github.com/harperreed/control4-drivers/releases/tag/realtime-event-webhooks-1)
+
 
 ## Getting started
 
