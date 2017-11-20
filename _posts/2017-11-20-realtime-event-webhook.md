@@ -1,6 +1,10 @@
 ---
 layout: post
 title:  "Realtime Event Webhook driver"
+download: https://github.com/harperreed/control4-drivers/releases/download/realtime-event-webhooks-1/realtime-event-webhook.c4z
+filename: realtime-event-webhook.c4z
+release_notes: https://github.com/harperreed/control4-drivers/releases/tag/realtime-event-webhooks-1
+release_name: Realtime Event Webhooks initial release
 ---
 
 This driver is a simple realtime event webhook driver. 
@@ -8,12 +12,6 @@ This driver is a simple realtime event webhook driver.
 It will register events for lighting, thermostat, motion, locks, and fans. When an event occurs, it will send an event notification via webhook with all of the relevant variables associated with that event and device.
 
 The best part is that it does it via internal events and doesn't require polling. This should be better for Control4 and be much more performant. It also allows the events to execute the exact moment that it happens in Control4. 
-
-## Download
-
-- Download: [realtime-event-webhook.c4z](https://github.com/harperreed/control4-drivers/releases/download/realtime-event-webhooks-1/realtime-event-webhook.c4z)
-- Release notes: [Realtime Event Webhooks initial release](https://github.com/harperreed/control4-drivers/releases/tag/realtime-event-webhooks-1)
-
 
 ## Getting started
 
@@ -52,9 +50,3 @@ You can use this to trigger events in another app that sits outside of your home
 ## What are webhooks? 
 
 A good place to get started with webhooks is [here](https://webhooks.pbworks.com/w/page/13385124/FrontPage). For debugging, I recommend [RequestBin](https://requestb.in)
-
-## 
-
-## Getting help
-
-This should be pretty straight forward - but if you are looking for more help - feel free to ping me on [email](mailto:harper@nata2.org), [c4forums](http://www.c4forums.com/profile/138454-harper/) or [reddit](https://www.reddit.com/user/nata2/). 

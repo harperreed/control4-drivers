@@ -15,17 +15,22 @@ title: Home
 
 <div class="catalogue">
   {% for post in paginator.posts %}
-    <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
+    
       <div>
-        <h1 class="catalogue-title">{{ post.title }}</h1>
-        <div class="catalogue-line"></div>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item"><h1 class="catalogue-title">{{ post.title }}</h1></a>
 
         <p>
-          {{ post.content | truncatewords: 30 | strip_html }}
+          <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">{{ post.content | truncatewords: 80 }}</a>
         </p>
+        <p>
+           Download:</strong> <a href="{{ post.download }}">{{ post.filename }}</a> <br />
+           <a href="{{ post.url | prepend: site.baseurl }}">Learn more</a>
+        </p>
+
 
       </div>
     </a>
+    
   {% endfor %}
 </div>
 

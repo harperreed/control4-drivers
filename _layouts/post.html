@@ -9,8 +9,21 @@ layout: default
 
   
   <div class="post-line"></div>
+  {% if page.download %}
+  <hr>
+  <ul>
+    <li><strong>Download:</strong> <a href="{{ page.download }}">{{ page.filename }}</a></li>
+    <li><strong>Release notes:</strong> <a href="{{ page.release_notes }}" target="_blank">{{ page.release_name }}</a></li>
+  </ul>
+  <hr>
+
+  {% endif %}
 
   {{ content }}
+
+  <h2 id="getting-help">Getting help</h2>
+
+  <p>This should be pretty straight forward - but if you are looking for more help - feel free to ping me on <a href="mailto:harper@nata2.org">email</a>, <a href="http://www.c4forums.com/profile/138454-harper/">c4forums</a> or <a href="https://www.reddit.com/user/nata2/">reddit</a>.</p>
 
 </div>
 
@@ -20,6 +33,8 @@ layout: default
       <span>Posted on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
     {% endif %}
   </div>
+
+
 
 <div class="pagination">
   {% if page.next.url %}
