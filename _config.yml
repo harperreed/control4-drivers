@@ -1,0 +1,32 @@
+# Permalinks
+permalink:      /:title
+
+# Setup
+title:          Harper Reed's Control4 Drivers
+paginate:       5
+baseurl:        ""
+url:            "https://c4drivers.com"
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        :compressed
+
+# Build settings
+markdown:       kramdown
+
+# About
+author:
+  name:         Harper Reed
+  url:          http://harperreed.com
+  email:        harper@nata2.org
+  twitter:      harper
+
+# Custom vars
+version:        3.4.1
+github:         
+  repo:         https://github.com/harperreed/control4-drivers
+
+# Gems
+gems:
+  - jekyll-paginate
