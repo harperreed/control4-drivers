@@ -14,7 +14,7 @@ title: Home
 <h1 class="post-title">Drivers</h1>
 
 <div class="catalogue">
-  {% for post in paginator.posts %}
+  {% for post in site.posts %}
     
       <div>
         <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item" onclick="ga('send', 'event', 'View {{ page.title }}', 'Index Title', 'click');"><h1 class="catalogue-title">{{ post.title }}</h1></a>
@@ -32,17 +32,6 @@ title: Home
     </a>
     
   {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
-  {% endif %}
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
-  {% endif %}
-
-  <span>{{ paginator.page }}</span>
 </div>
 
 {% endif %}
