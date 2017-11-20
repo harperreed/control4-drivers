@@ -17,14 +17,14 @@ title: Home
   {% for post in paginator.posts %}
     
       <div>
-        <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item"><h1 class="catalogue-title">{{ post.title }}</h1></a>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item" onclick="ga('send', 'event', 'View {{ page.title }}', 'Index Title', 'click');"><h1 class="catalogue-title">{{ post.title }}</h1></a>
 
         <p>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">{{ post.content | truncatewords: 80 }}</a>
+          <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item" onclick="ga('send', 'event', 'View {{ page.title }}', 'Index Body', 'click');">{{ post.content | truncatewords: 80 }}</a>
         </p>
         <p>
-           Download:</strong> <a href="{{ post.download }}">{{ post.filename }}</a> <br />
-           <a href="{{ post.url | prepend: site.baseurl }}">Learn more</a>
+           Download:</strong> <a href="{{ post.download }}" onclick="ga('send', 'event', 'Download {{ page.filename }}', 'Index', 'click');">{{ post.filename }}</a> <br />
+           <a href="{{ post.url | prepend: site.baseurl }}" onclick="ga('send', 'event', 'View {{ page.title }}', 'Index Learn more', 'click');">Learn more</a>
         </p>
 
 

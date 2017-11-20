@@ -12,8 +12,8 @@ layout: default
   {% if page.download %}
   <hr>
   <ul>
-    <li><strong>Download:</strong> <a href="{{ page.download }}">{{ page.filename }}</a></li>
-    <li><strong>Release notes:</strong> <a href="{{ page.release_notes }}" target="_blank">{{ page.release_name }}</a></li>
+    <li><strong>Download:</strong> <a href="{{ page.download }}" onclick="ga('send', 'event', 'Download {{ page.filename }}', 'Post', 'click');">{{ page.filename }}</a></li>
+    <li><strong>Release notes:</strong> <a href="{{ page.release_notes }}" target="_blank" onclick="ga('send', 'event', 'Release notes for {{ page.release_name }}', 'Post', 'click');">{{ page.release_name }}</a></li>
   </ul>
   <hr>
 
@@ -23,7 +23,7 @@ layout: default
 
   <h2 id="getting-help">Getting help</h2>
 
-  <p>This should be pretty straight forward - but if you are looking for more help - feel free to ping me on <a href="mailto:harper@nata2.org">email</a>, <a href="http://www.c4forums.com/profile/138454-harper/">c4forums</a> or <a href="https://www.reddit.com/user/nata2/">reddit</a>.</p>
+  <p>This should be pretty straight forward - but if you are looking for more help - feel free to ping me on <a href="mailto:harper@nata2.org" onclick="ga('send', 'event', 'Get help', 'click', 'email');">email</a>, <a href="http://www.c4forums.com/profile/138454-harper/" onclick="ga('send', 'event', 'Get help', 'click', 'c4forums');">c4forums</a> or <a href="https://www.reddit.com/user/nata2/" onclick="ga('send', 'event', 'Get help', 'click', 'reddit');">reddit</a>.</p>
 
 </div>
 
