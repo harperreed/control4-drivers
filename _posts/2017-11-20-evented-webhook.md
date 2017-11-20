@@ -3,8 +3,8 @@ layout: post
 title:  "Realtime Event Webhook driver"
 ---
 
-Download: [realtime-event-webhook.c4z](https://github.com/harperreed/control4-drivers/releases/download/realtime-event-webhooks-1/realtime-event-webhook.c4z)
-Release notes: [Realtime Event Webhooks initial release](https://github.com/harperreed/control4-drivers/releases/tag/realtime-event-webhooks-1)
+- Download: [realtime-event-webhook.c4z](https://github.com/harperreed/control4-drivers/releases/download/realtime-event-webhooks-1/realtime-event-webhook.c4z)
+- Release notes: [Realtime Event Webhooks initial release](https://github.com/harperreed/control4-drivers/releases/tag/realtime-event-webhooks-1)
 
 This driver is a simple realtime event webhook driver. 
 
