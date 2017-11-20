@@ -12,8 +12,9 @@ layout: default
   {% if page.download %}
   <hr>
   <ul>
-    <li><strong>Download:</strong> <a href="{{ page.download }}" onclick="ga('send', 'event', 'Download {{ page.filename }}', 'Post', 'click');">{{ page.filename }}</a></li>
-    <li><strong>Release notes:</strong> <a href="{{ page.release_notes }}" target="_blank" onclick="ga('send', 'event', 'Release notes for {{ page.release_name }}', 'Post', 'click');">{{ page.release_name }}</a></li>
+    <li><strong>Download: </strong> <a href="{{ page.download }}" onclick="ga('send', 'event', 'Download {{ page.filename }}', 'Post', 'click');">{{ page.filename }}</a></li>
+    <li><strong>Release notes: </strong> <a href="{{ page.release_notes }}" target="_blank" onclick="ga('send', 'event', 'Release notes for {{ page.release_name }}', 'Post', 'click');">{{ page.release_name }}</a></li>
+    <li><strong>Version: </strong> {{page.version}}
   </ul>
   <hr>
 
