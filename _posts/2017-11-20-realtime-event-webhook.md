@@ -1,15 +1,14 @@
 ---
 layout: post
 title:  "Realtime Event Webhook driver"
-download: https://github.com/harperreed/control4-drivers/releases/download/realtime-event-webhooks-1/realtime-event-webhook.c4z
+download: https://github.com/harperreed/control4-drivers/releases/download/realtime-event-webhooks-3/realtime-event-webhook.c4z
 filename: realtime-event-webhook.c4z
-release_notes: https://github.com/harperreed/control4-drivers/releases/tag/realtime-event-webhooks-1
-release_name: Realtime Event Webhooks initial release
-version: 1-alpha
+release_notes: https://github.com/harperreed/control4-drivers/releases/tag/realtime-event-webhooks-3
+release_name: Realtime Event Webhooks: Added deviceType to the webhook payload
+version: 3
 ---
 
-**THIS IS AN ALPHA RELEASE**
-
+**Update 11/22**
 
 This driver is a simple realtime event webhook driver. 
 
@@ -38,6 +37,7 @@ An example JSON payload looks like this:
           "description" : "Current light level (0% - 100%)",
           "deviceId" : 314,
           "deviceName" : "Cans",
+          "deviceType" : "light",
           "eventId" : 1001,
           "eventValue" : "10",
           "hidden" : "0",
@@ -50,6 +50,11 @@ An example JSON payload looks like this:
     }
 
 You can use this to trigger events in another app that sits outside of your home or inside of your network. 
+
+## Changes
+
+* 11/22 - Added support for deviceType in the payload
+* 11/20 - Initial release
 
 ## What are webhooks? 
 
