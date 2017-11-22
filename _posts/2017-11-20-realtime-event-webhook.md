@@ -4,7 +4,7 @@ title:  "Realtime Event Webhook driver"
 download: https://github.com/harperreed/control4-drivers/releases/download/realtime-event-webhooks-3/realtime-event-webhook.c4z
 filename: realtime-event-webhook.c4z
 release_notes: https://github.com/harperreed/control4-drivers/releases/tag/realtime-event-webhooks-3
-release_name: Realtime Event Webhooks: Added deviceType to the webhook payload
+release_name: Added deviceType to the webhook payload
 version: 3
 ---
 
