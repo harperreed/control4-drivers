@@ -15,8 +15,11 @@ I decided to try and make some drivers that solved some of the problems that I w
 ### Drivers: 
 
 - [Webhook Events driver](/realtime-event-webhook) - Alpha version released
-- Home Assistant realtime bridge - ETA Q1 2018
+- Nanoleaf Aurora Driver - ETA Q1 2018
 - MQTT bridge - ETA Q1 2018
+- Home Assistant realtime bridge - ETA Q2 2018
+- Tesla driver
+- Awair driver
 
 Obviously YMMV with all of this.
 
