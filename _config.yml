@@ -27,6 +27,3 @@ version:        3.4.1
 github:         
   repo:         https://github.com/harperreed/control4-drivers
 
-# Gems
-gems:
-  - jekyll-paginate
