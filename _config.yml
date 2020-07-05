@@ -2,7 +2,7 @@
 permalink:      /:title
 
 # Setup
-title:          Harper Reed's Control4 Drivers
+title:          Harper's Control4 Drivers
 paginate:       5
 baseurl:        ""
 url:            "https://c4drivers.com"
@@ -19,7 +19,7 @@ markdown:       kramdown
 author:
   name:         Harper Reed
   url:          http://harperreed.com
-  email:        harper@nata2.org
+  email:        harper@modest.com
   twitter:      harper
 
 # Custom vars
